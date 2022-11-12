@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script defer src="app.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Country Information - Country searcher</title>
 </head>
 <body>
+<header>
+    <h1>Let's search some countries</h1>
+</header>
+
+<main>
+    <div class="image-container">
+        <img src="./assets/earth.png" alt="Earth"/>
+    </div>
+
+    <div class="input-container">
+        <label for="country-search"></label>
+        <input type="search" id="country-search" name="country-search" placeholder="Bijvoorbeeld Nederland of Peru"/>
+        <button id="button" type="button">zoek</button>
+    </div>
+
+    <div id="country-info"></div>
+
+    <span id="error-message"></span>
+</main>
+
+<footer></footer>
 
 </body>
 </html>
